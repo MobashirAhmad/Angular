@@ -11,6 +11,8 @@ export class AppComponent {
   }
   getToDoItems()
   {
-    return this.model.item;
+    //return this.model.item.filter(function (item) { return !item.done });
+    //Shortcut using Lambda Expression
+     return this.model.item.filter(item=>!item.done);
   }
 }
