@@ -9,4 +9,8 @@ export class AppComponent {
   getName() {
     return this.model.user;
   }
+  getToDoItems()
+  {
+    return this.model.item;
+  }
 }
