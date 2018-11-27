@@ -11,6 +11,9 @@
 <td>
     {{item.action}}
 </td>
+<td>
+    <input type="checkbox" [(ngModel)]="item.done" />
+</td>
 <td [ngSwitch]="item.done">
 <span *ngSwitchCase="true"> Yes</span>
 <span *ngSwitchDefault>No</span>
