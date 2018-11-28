@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Model, ToDoItems } from './model'
-import { ThrowStmt } from '@angular/compiler';
+
 @Component({
   selector: 'todo-app',
   templateUrl: './app.component.html'
