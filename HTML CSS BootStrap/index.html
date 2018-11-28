@@ -5,7 +5,7 @@
     <title>ToDo</title>
     <meta charset="utf-8" />
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
+    <!-- <style>
         #gridContainer {
             padding: 20px;
         }
@@ -20,14 +20,66 @@
         /* Bootstrap doesn’t apply any styling to the elements within a row, which I why I have used a style
 element to create a custom CSS style that sets a background color, sets up some spacing between rows, and
 adds a border. */
-    </style>
+    </style> -->
 </head>
+<body class="m-1">
+<h3 class="bg-primary text-white p-3">Mobashir's To Do List</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <form>
+                <div class="form-group">
+                    <label>Task</label>
+                    <input class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <input class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" />
+                    <label>Done</label>
+                </div>
+                <button class="btn btn-primary">Add</button>
+            </form>
+        </div>
+        <div class="col-8">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Done</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Buy Flowers</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Get Shoes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Collect Tickets</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Call Joe</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
 <!-- col-sm-* Grid cells are displayed horizontally when the screen width is greater than 576 pixels.
 col-md-* Grid cells are displayed horizontally when the screen width is greater than 768 pixels.
 col-lg-* Grid cells are displayed horizontally when the screen width is greater than 992 pixels.
 col-xl-* Grid cells are displayed horizontally when the screen width is greater than 1200 pixels. -->
 
-<body class="m-2">
+<!-- <body class="m-2">
     <h3>Grid Layout</h3>
     <div class="container">
         <div class="row">
@@ -44,7 +96,7 @@ col-xl-* Grid cells are displayed horizontally when the screen width is greater 
             <div class="col-sm-1">1</div>
         </div>
     </div>
-</body>
+</body> -->
 <!-- <body class="m-2">
     <h3 class="bg-primary text-white p-3">Mobashir's To Do List</h3>
     <form>
