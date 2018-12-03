@@ -43,10 +43,17 @@
 // }
 // myFunc("Raj");
 
-//Using a Rest Parameter
-let myFunc=function (firstName,lastName,...extraparam)
-{
+// //Using a Rest Parameter
+// let myFunc=function (firstName,lastName,...extraparam)
+// {
 
-  console.log(firstName + lastName + extraparam )
+//   console.log(firstName + lastName + extraparam )
+// }
+// myFunc("Raj","Test","test1","test2");
+
+let myFunc=  function(firstname)
+{
+ 
+  return "Hello" + firstname;
 }
-myFunc("Raj","Test","test1","test2");
+console.log(myFunc("Raj"));
