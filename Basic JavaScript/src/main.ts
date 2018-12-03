@@ -35,10 +35,18 @@
 // }
 // myFunc("Raj","Kishor");
 
-//Using a Default Parameter
-let myFunc=function (firstName,lastName="ravi")
+// //Using a Default Parameter
+// let myFunc=function (firstName,lastName="ravi")
+// {
+
+//   console.log(firstName + lastName )
+// }
+// myFunc("Raj");
+
+//Using a Rest Parameter
+let myFunc=function (firstName,lastName,...extraparam)
 {
 
-  console.log(firstName + lastName )
+  console.log(firstName + lastName + extraparam )
 }
-myFunc("Raj");
+myFunc("Raj","Test","test1","test2");
