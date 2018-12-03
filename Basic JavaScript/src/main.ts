@@ -26,10 +26,19 @@
 // console.log("This is a statement");
 // };
 
+// Parameterized function
 
-let myFunc=function(firstNaame,lastName)
+// let myFunc=function(firstNaame,lastName)
+// {
+
+//   console.log(firstNaame+lastName);
+// }
+// myFunc("Raj","Kishor");
+
+//Using a Default Parameter
+let myFunc=function (firstName,lastName="ravi")
 {
 
-  console.log(firstNaame+lastName);
+  console.log(firstName + lastName )
 }
-myFunc("Raj","Kishor");
+myFunc("Raj");
